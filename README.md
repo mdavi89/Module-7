@@ -22,4 +22,4 @@ The license used is the MIT license. ![License](https://img.shields.io/badge/lic
 
 ## Tests
 
-N/A
+Video of the code in action: https://app.screencastify.com/v2/manage/videos/1pcJdsQYMe6vaJStQ9bB
