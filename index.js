@@ -1,9 +1,11 @@
 // TODO: Include packages needed for this application
+// Imported inquirer for the prompts in console, fs to write the README, and generateMarkdown to put the inputs taken in markdown language for the README
 import inquirer from "inquirer";
 import fs from "fs";
 import generateMarkdown from './utils/generateMarkdown.js'
 
 // TODO: Create a function to write README file
+//using fs write file functionality to take the data and write it to file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('Success!')
@@ -11,7 +13,8 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-
+// The init function uses inquirer to take in inputs from the command line 
+// Then calls the writeToFile to create the README
 function init() {
 inquirer
     .prompt([
